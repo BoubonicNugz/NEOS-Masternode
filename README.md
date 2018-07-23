@@ -62,41 +62,35 @@ git clone https://github.com/masternodes/vps.git && cd vps
 Install & configure your desired master node with options:
 
 ```bash
-./install.sh -p pivx
+./install.sh -p neos
 ```
 
 ## Examples for typical script invocation
 
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
-**Install & configure 4 PIVX masternodes:**
+**Install & configure 4 NEOS masternodes:**
 
 ```bash
-./install.sh -p pivx -c 4
+./install.sh -p neos -c 4
 ```
 
-**Update daemon of previously installed PIVX masternodes:**
+**Update daemon of previously installed NEOS masternodes:**
 
 ```bash
-./install.sh -p pivx -u
+./install.sh -p neos -u
 ```
 
-**Install 6 PIVX masternodes with the git release tag "tags/v3.0.5.1"**
+**Install 6 NEOS masternodes with the git release tag "tags/v3.0.5.1"**
 
 ```bash
-./install.sh -p pivx -c 6 -r "tags/v3.0.5.1"
+./install.sh -p neos -c 6 -r "tags/v3.0.5.1"
 ```
 
-**Wipe all PIVX masternode data:**
+**Wipe all NEOS masternode data:**
 
 ```bash
-./install.sh -p pivx -w
-```
-
-**Install 2 PIVX masternodes and configure sentinel monitoring:**
-
-```bash
-./install.sh -p pivx -c 2 -s
+./install.sh -p neos -w
 ```
 
 ## Options
@@ -162,12 +156,12 @@ The management script release will follow within the next couple of days.
 
 | command                               | description                                  |
 | :------------------------------------ | -------------------------------------------- |
-| nodemaster start pivx (all\|number)   | start all or a specific pivx masternode(s)   |
-| nodemaster restart pivx (all\|number) | stop all or a specific pivx masternode(s)    |
-| nodemaster stop pivx (all\|number)    | restart all or a specific pivx masternode(s) |
-| nodemaster cleanup pivx (all\|number) | delete chain data for all pivx masternodes   |
-| nodemaster status pivx (all\|number)  | systemd process status for a pivx masternode |
-| nodemaster tail pivx (all\|number)    | tail debug logs for a pivx masternode        |
+| nodemaster start neos (all\|number)   | start all or a specific neos masternode(s)   |
+| nodemaster restart neos (all\|number) | stop all or a specific neos masternode(s)    |
+| nodemaster stop neos (all\|number)    | restart all or a specific neos masternode(s) |
+| nodemaster cleanup neos (all\|number) | delete chain data for all neos masternodes   |
+| nodemaster status neos (all\|number)  | systemd process status for a neos masternode |
+| nodemaster tail neos (all\|number)    | tail debug logs for a neos masternode        |
 
 # Todo
 
